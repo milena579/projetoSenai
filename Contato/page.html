@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+
     <title>Controle de Estoque</title>
 </head>
 <body>
-    
+    <a href="../Menu/page.html">VOLTAR</a>
+    <h1>Contato</h1>
+    <h2>Ensira dados iniciais para envio</h2>
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" placeholder="Digite seu nome">
+
+    <br><br>
+
+    <label for="mensagen">Observações:</label>
+    <textarea type="mensagem" id="mensagem" placeholder="Digite a mensgaem"></textarea>
+
+    <br><br>
+
+    <button onclick="confereMensagemWpp()">Conferir Mensagem</button>
+
+    <br><br>
+
+    <p>Nome: <span id="confNome"></span></p>
+    <p>Observações: <span id="confObs"></span></p>
+    <p>Data: <span id="confDate"></span></p>
+
+    <br><br>
+    <button onclick="enviar()">Enviar mensagem</button>
+
 </body>
 </html>
